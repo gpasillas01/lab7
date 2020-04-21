@@ -1,10 +1,12 @@
 function init(){
 	
   var input = document.getElementById('entryinput');
-	
-  var output = document.getElementById('textoutput');
+
 	
   var button = document.getElementById('entrybutton');
+	
+  var output = document.getElementById('textoutput');
+
 	
 	button.addEventListener('click', 
    function(){
