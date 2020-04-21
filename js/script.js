@@ -1,12 +1,20 @@
 function init(){
-var name = document.getElementsByClassName('center')[1];  
-var button1 = document.getElementById('entrybutton');
-var results = document.getElementById('textoutput');
-var input1 = document.getElementById('entryinput');    
-function alertMeClicked(){
-  alert(name.textContent + ":"+ input1.value);
-  results.innerHTML = input1.value;  
+ var button1 = document.getElementById('entrybutton');
+ 
+ var input1 = document.getElementById('entryinput'); 
+ 
+ var results = document.getElementById('textoutput');
+  
+  var name = document.getElementsByClassName('center')[1]; 
+function alertFunction(){
+	alert(name.textContent + ': ' + message.value);
 }
- button1.addEventListener('click', alertMeClicked);
+
+function outputFunction(){
+	display.innerHTML = message.value;
+}
+
+button.addEventListener('click', alertFunction);
+button.addEventListener('click', outputFunction);
 }
 window.addEventListener('load', init);
